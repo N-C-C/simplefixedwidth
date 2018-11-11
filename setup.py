@@ -4,17 +4,17 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="example_pkg",
-    version="0.0.1",
-    author="Example Author",
-    author_email="author@example.com",
-    description="A small example package",
+    name="SimpleFixedWidth",
+    version="0.0.1.",
+    author="John Glasgow",
+    author_email="jglasgow@northampton.edu",
+    description="A simple python library for quickly parsing records in a fixed width format.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/N-C-C/simplefixedwidth",
     packages=['fixedwidth'],
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
     ],
 )
