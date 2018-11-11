@@ -1,9 +1,9 @@
-def slices(s, *args):
+def get_fields(s, *args):
     """
     Slices a string 's' in segments 'args' wide.
     Negative widths represent ignored padding fields.
     :param s: string
-    :param args: list of widths for the string
+    :param args: list of widths for the string, negative numbers are skipped
     :return: yields string 's' in a list
     """
     position = 0
