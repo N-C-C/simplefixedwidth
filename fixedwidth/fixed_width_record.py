@@ -16,5 +16,5 @@ def get_fields(s, *args):
 def get_line(string, rec_type_start=-1, rec_type_end=-1):
     rec_identifier = ""
     if rec_type_start >= 0 and rec_type_end > 0:
-        rec_identifier = string[17:19]
+        rec_identifier = string[rec_type_start:rec_type_end]
     return rec_identifier, string
